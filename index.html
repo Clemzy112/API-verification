@@ -548,11 +548,11 @@
                     </div>
                     <div id="priceContent" style="display: none;">
                         <div class="stat-item">
-                            <span class="stat-label">Current Price</span>
+                            <span class="stat-label">Verification Fee</span>
                             <span class="stat-value" id="currentPrice">$0.00</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-label">Verification Fee</span>
+                            <span class="stat-label">MarketCap</span>
                             <span class="stat-value" id="marketCap">$0.00</span>
                         </div>
                         <div class="stat-item">
@@ -610,8 +610,8 @@
   "Network": "Ethereum",
   "data": {
     "symbol": "ETH",
-    "price": 2317,
-    "marketCap": 15.00000000,
+    "price": 26.79,
+    "marketCap": 27000000000,
     "volume24h": 12000000000
   }
 }</pre>
@@ -814,7 +814,7 @@ Response Example:
 
             try {
                 const priceData = {
-                    ethereum: { symbol: 'ETH',price: 2317, marketCap: 27.000000000, volume24h: 12000000000 }
+                    ethereum: { symbol: 'ETH',price: 26.79, marketCap: 27000000000, volume24h: 12000000000 }
                 };
 
                 const data = await simulateApiCall({

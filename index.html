@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoFinance Dashboard - API Integration</title>
+    <title>API Integration</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         * {
@@ -532,19 +532,16 @@
 
             <!-- API 2: Crypto Prices -->
             <div class="card">
-                <h2>💹 Crypto Prices</h2>
+                <h2>💹 Verification Fee </h2>
                 <div class="card-content">
                     <div class="form-group">
                         <label for="cryptoSymbol">Select Cryptocurrency</label>
                         <select id="cryptoSymbol">
-                            <option value="bitcoin">Bitcoin (BTC)</option>
                             <option value="ethereum">Ethereum (ETH)</option>
-                            <option value="cardano">Cardano (ADA)</option>
-                            <option value="solana">Solana (SOL)</option>
                         </select>
                     </div>
                     <button class="btn-primary btn-small" onclick="fetchCryptoPrices()">
-                        Get Prices
+                        Verification Fee Price
                     </button>
                     <div id="priceLoading" class="spinner" style="display: none;">
                         <div class="loading"></div> Loading...
@@ -555,12 +552,12 @@
                             <span class="stat-value" id="currentPrice">$0.00</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-label">Market Cap</span>
-                            <span class="stat-value" id="marketCap">$0.00</span>
+                            <span class="stat-label">Verification Fee</span>
+                            <span class="stat-value" id="marketCap">0.00647143 ETH</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-label">24h Volume</span>
-                            <span class="stat-value" id="volume24h">$0.00</span>
+                            <span class="stat-value" id="volume24h">$15.00</span>
                         </div>
                     </div>
                     <div id="priceResponse" class="response-box" style="display: none;">

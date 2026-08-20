@@ -486,7 +486,7 @@
         <header>
             <div class="header-content">
                 <div>
-                    <h1>💰 CryptoFinance Dashboard</h1>
+                    <h1>🌐 API Integration</h1>
                     <p style="color: #6b7280; font-size: 14px; margin-top: 5px;">Real-time Portfolio & Trading Management</p>
                 </div>
                 <div class="header-status">
@@ -502,7 +502,7 @@
         <div class="main-grid">
             <!-- API 1: Portfolio Balance -->
             <div class="card">
-                <h2>📊 Portfolio Balance</h2>
+                <h2>📊 Transacted Amount</h2>
                 <div class="card-content">
                     <button class="btn-primary btn-small" onclick="fetchPortfolioBalance()">
                         Load Balance
@@ -553,11 +553,11 @@
                         </div>
                         <div class="stat-item">
                             <span class="stat-label">Verification Fee</span>
-                            <span class="stat-value" id="marketCap">15.00</span>
+                            <span class="stat-value" id="marketCap">$0.00</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-label">24h Volume</span>
-                            <span class="stat-value" id="volume24h">$15.00</span>
+                            <span class="stat-value" id="volume24h">$0.00</span>
                         </div>
                     </div>
                     <div id="priceResponse" class="response-box" style="display: none;">
@@ -607,10 +607,10 @@
                 <div class="response-box">
                     <pre>Response Example:
 {
-  "status": "success",
+  "Network": "Ethereum",
   "data": {
-    "symbol": "BTC",
-    "price": 43250.25,
+    "symbol": "ETH",
+    "price": 0.00647143,
     "marketCap": 850000000000,
     "volume24h": 25000000000
   }
@@ -639,7 +639,7 @@
 {
   "type": "USDT TRANSFER",
   "currency": "USDT",
-  "amount": 5000,
+  "amount": 250000,
   "Network": "Ethereum"
 }
 
